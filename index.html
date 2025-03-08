@@ -77,7 +77,7 @@
       }
       .furigana  p{
         padding: 12px;
-        border: 1px solid #ccc; 
+        border: 2px solid #ccc; 
         border-radius: 5px; 
         padding: 10px; 
         margin: 5px 0;
@@ -259,9 +259,9 @@
             const paragraphs = furiganaDiv2.getElementsByTagName('p');
             for (let i = 0; i < paragraphs.length; i++) {
                 if (i % 4 === 0 || i % 4 === 1) {
-                    paragraphs[i].style.borderBottom = `4px solid ${borderColor1}`;
+                    paragraphs[i].style.borderBottom = `10px solid ${borderColor1}`;
                 } else {
-                    paragraphs[i].style.borderBottom = `4px solid ${borderColor2}`;
+                    paragraphs[i].style.borderBottom = `10px solid ${borderColor2}`;
                 }
             }
         }
