@@ -76,7 +76,7 @@
         grid-template-columns: 1.2fr 0.8fr; 
       }
       .furigana  p{
-        padding: 10px;
+        padding: 12px;
         border: 1px solid #ccc; 
         border-radius: 5px; 
         padding: 10px; 
@@ -259,9 +259,9 @@
             const paragraphs = furiganaDiv2.getElementsByTagName('p');
             for (let i = 0; i < paragraphs.length; i++) {
                 if (i % 4 === 0 || i % 4 === 1) {
-                    paragraphs[i].style.borderBottom = `2px solid ${borderColor1}`;
+                    paragraphs[i].style.borderBottom = `4px solid ${borderColor1}`;
                 } else {
-                    paragraphs[i].style.borderBottom = `2px solid ${borderColor2}`;
+                    paragraphs[i].style.borderBottom = `4px solid ${borderColor2}`;
                 }
             }
         }
