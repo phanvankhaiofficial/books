@@ -247,7 +247,15 @@
             furiganaDiv.appendChild(p);
           }
         }
-
+        const paragraphs = furiganaDiv.querySelectorAll("p");
+        paragraphs.forEach((p, index) => {
+          if ((index + 1) % 2 === 0) {
+            p.style.marginTop = "0px"; // Phần tử chẵn
+          } else {
+            p.style.marginBottom = "0px"; // Phần tử lẻ
+          }
+        });
+        
         document.body.appendChild(furiganaDiv);
 
         const furiganaBgColor2 = document.getElementById("furiganaBgColor2").value;
